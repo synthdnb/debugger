@@ -46,6 +46,20 @@ from two locations:
 
 To see debugger's current settings, use the `set` command.
 
+### Getting Started
+
+After installing the debugger gem, you can create a test file to try out the debugger functionality. Save this example to a file and run it with ruby:
+
+```ruby
+require 'debugger'
+
+x = 4
+debugger
+y = 5
+```
+
+Running the above code as a file in Ruby (e.g., ```ruby test-debug.rb```) will cause debugger to break code execution and give you an interactive console on the line "debugger". You can type "step" to dive into the line of code or type "next" to stay at the same level and process the line you're on. You can also make any IRB style commands you want to inspect or modify the code. Typing "continue" will resume code execution until the next "debugger" line is encountered, if any.
+
 ### Using Commands
 
 For a list of commands:
